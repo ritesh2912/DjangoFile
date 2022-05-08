@@ -2,5 +2,11 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /home/ubuntu/
-
+    destination: /home/ubuntu/projectdir
+hooks:
+  BeforeInstall: 
+    - location: configuration.sh
+      timeout: 300
+  AfterInstall:
+    - location: source.sh
+      timeout: 300
