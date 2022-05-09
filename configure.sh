@@ -36,7 +36,7 @@ echo "server {
     server_name 13.233.101.132;
     location = /favicon.ico { access_log off; log_not_found off; }
     location /static/ {
-        root /home/ubuntu/projectdir/projectdir;
+        root /home/ubuntu/projectdir;
     }
     location / {
         include proxy_params;
