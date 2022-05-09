@@ -5,8 +5,8 @@ files:
     destination: /home/ubuntu/projectdir
 hooks:
   BeforeInstall: 
-    - location: configuration.sh
+    - location: second.sh
       timeout: 300
   AfterInstall:
-    - location: source.sh
+    - location: configure.sh
       timeout: 300
